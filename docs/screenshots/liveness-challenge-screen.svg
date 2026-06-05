@@ -1,0 +1,21 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="390" height="844" fill="#F6F8F7"/>
+  <rect width="390" height="96" fill="#12343B"/>
+  <text x="24" y="58" fill="white" font-family="Arial" font-size="24" font-weight="700">Liveness</text>
+  <text x="24" y="86" fill="#D7F0E4" font-family="Arial" font-size="14">Challenge response</text>
+  <text x="24" y="150" fill="#12343B" font-family="Arial" font-size="26" font-weight="800">Turn Head Right</text>
+  <text x="24" y="182" fill="#35545B" font-family="Arial" font-size="15">Random gestures protect against photos</text>
+  <text x="24" y="204" fill="#35545B" font-family="Arial" font-size="15">and screen replay attempts.</text>
+  <rect x="48" y="236" width="294" height="330" rx="8" fill="#0F1F24"/>
+  <path d="M128 395C128 336 173 291 232 291C247 291 262 295 276 302C252 320 238 350 238 386C238 424 254 454 282 472C267 483 249 489 230 489C172 489 128 453 128 395Z" fill="#2E6E74"/>
+  <ellipse cx="210" cy="377" rx="12" ry="8" fill="#F6F8F7"/>
+  <path d="M198 427C213 438 231 438 247 427" stroke="#F6F8F7" stroke-width="7" stroke-linecap="round"/>
+  <path d="M300 394L326 368M300 394L326 420" stroke="#FFE1B3" stroke-width="8" stroke-linecap="round"/>
+  <rect x="52" y="594" width="64" height="10" rx="5" fill="#1F7A5A"/>
+  <rect x="126" y="594" width="64" height="10" rx="5" fill="#1F7A5A"/>
+  <rect x="200" y="594" width="64" height="10" rx="5" fill="#1F7A5A"/>
+  <rect x="274" y="594" width="64" height="10" rx="5" fill="#D8E3E0"/>
+  <text x="92" y="650" fill="#12343B" font-family="Arial" font-size="16" font-weight="700">Liveness score: 0.86</text>
+  <rect x="24" y="714" width="342" height="52" rx="8" fill="#1F7A5A"/>
+  <text x="108" y="746" fill="white" font-family="Arial" font-size="16" font-weight="700">Run Challenge Sequence</text>
+</svg>

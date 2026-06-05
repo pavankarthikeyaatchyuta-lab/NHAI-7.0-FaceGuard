@@ -1,0 +1,21 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="390" height="844" fill="#F6F8F7"/>
+  <rect width="390" height="96" fill="#12343B"/>
+  <text x="24" y="58" fill="white" font-family="Arial" font-size="24" font-weight="700">Face Verification</text>
+  <text x="24" y="86" fill="#D7F0E4" font-family="Arial" font-size="14">Local identity match</text>
+  <text x="24" y="150" fill="#12343B" font-family="Arial" font-size="26" font-weight="800">Authentication</text>
+  <text x="24" y="182" fill="#35545B" font-family="Arial" font-size="15">Compare the live embedding against the</text>
+  <text x="24" y="204" fill="#35545B" font-family="Arial" font-size="15">encrypted local personnel record.</text>
+  <rect x="48" y="236" width="294" height="330" rx="8" fill="#0F1F24"/>
+  <circle cx="195" cy="378" r="86" fill="#517C68"/>
+  <ellipse cx="164" cy="364" rx="12" ry="8" fill="#F6F8F7"/>
+  <ellipse cx="226" cy="364" rx="12" ry="8" fill="#F6F8F7"/>
+  <path d="M166 420C184 434 208 434 226 420" stroke="#F6F8F7" stroke-width="7" stroke-linecap="round"/>
+  <rect x="72" y="596" width="246" height="16" rx="8" fill="#D8E3E0"/>
+  <rect x="72" y="596" width="212" height="16" rx="8" fill="#1F7A5A"/>
+  <text x="72" y="636" fill="#12343B" font-family="Arial" font-size="16" font-weight="700">Similarity score: 0.91</text>
+  <rect x="24" y="700" width="342" height="52" rx="8" fill="#1F7A5A"/>
+  <text x="145" y="732" fill="white" font-family="Arial" font-size="16" font-weight="700">Verify Face</text>
+  <rect x="24" y="780" width="144" height="32" rx="8" fill="#C8EAD8"/>
+  <text x="40" y="801" fill="#12343B" font-family="Arial" font-size="13" font-weight="700">Authenticated</text>
+</svg>

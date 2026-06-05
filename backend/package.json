@@ -1,0 +1,17 @@
+{
+  "name": "faceguard-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1062.0",
+    "@aws-sdk/client-s3": "^3.1062.0",
+    "@aws-sdk/lib-dynamodb": "^3.1062.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.150"
+  }
+}

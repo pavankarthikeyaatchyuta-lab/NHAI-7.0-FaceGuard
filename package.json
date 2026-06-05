@@ -1,0 +1,18 @@
+{
+  "name": "faceguard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline facial recognition and liveness authentication for NHAI field personnel.",
+  "scripts": {
+    "validate": "node scripts/validate-project.mjs",
+    "test": "vitest run --config tests/vitest.config.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

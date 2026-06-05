@@ -1,0 +1,87 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: FaceGuard offline sync and purge backend.
+
+Globals:
+  Function:
+    Runtime: nodejs22.x
+    Timeout: 10
+    MemorySize: 256
+    Architectures:
+      - arm64
+    Environment:
+      Variables:
+        SYNC_TABLE_NAME: !Ref SyncTable
+        SYNC_BUCKET_NAME: !Ref SyncBucket
+
+Resources:
+  SyncEventsApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowMethods:
+          - POST
+          - OPTIONS
+        AllowOrigins:
+          - '*'
+        AllowHeaders:
+          - authorization
+          - content-type
+
+  SyncEventsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ../lambda/syncEvents/
+      Handler: handler.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref SyncTable
+        - S3CrudPolicy:
+            BucketName: !Ref SyncBucket
+      Events:
+        SyncEvents:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref SyncEventsApi
+            Path: /sync/events
+            Method: POST
+
+  SyncTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: pk
+          AttributeType: S
+        - AttributeName: sk
+          AttributeType: S
+      KeySchema:
+        - AttributeName: pk
+          KeyType: HASH
+        - AttributeName: sk
+          KeyType: RANGE
+      SSESpecification:
+        SSEEnabled: true
+      TimeToLiveSpecification:
+        AttributeName: expiresAt
+        Enabled: true
+
+  SyncBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: aws:kms
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      VersioningConfiguration:
+        Status: Enabled
+
+Outputs:
+  SyncEndpoint:
+    Description: HTTP endpoint for mobile sync uploads.
+    Value: !Sub '${SyncEventsApi.ApiEndpoint}/sync/events'

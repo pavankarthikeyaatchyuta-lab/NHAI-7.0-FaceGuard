@@ -1,0 +1,21 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="390" height="844" fill="#F6F8F7"/>
+  <rect width="390" height="96" fill="#12343B"/>
+  <text x="24" y="58" fill="white" font-family="Arial" font-size="24" font-weight="700">FaceGuard</text>
+  <text x="24" y="86" fill="#D7F0E4" font-family="Arial" font-size="14">Offline enrollment</text>
+  <rect x="24" y="126" width="112" height="32" rx="8" fill="#C8EAD8"/>
+  <text x="38" y="147" fill="#12343B" font-family="Arial" font-size="13" font-weight="700">Offline mode</text>
+  <text x="24" y="204" fill="#12343B" font-family="Arial" font-size="28" font-weight="800">Enroll Personnel</text>
+  <text x="24" y="236" fill="#35545B" font-family="Arial" font-size="15">Capture multiple frames and store an</text>
+  <text x="24" y="258" fill="#35545B" font-family="Arial" font-size="15">encrypted face embedding on device.</text>
+  <rect x="48" y="288" width="294" height="330" rx="8" fill="#0F1F24"/>
+  <circle cx="195" cy="430" r="88" fill="#2E6E74"/>
+  <ellipse cx="164" cy="415" rx="13" ry="8" fill="#F6F8F7"/>
+  <ellipse cx="226" cy="415" rx="13" ry="8" fill="#F6F8F7"/>
+  <path d="M157 474C176 492 214 492 233 474" stroke="#F6F8F7" stroke-width="8" stroke-linecap="round"/>
+  <rect x="24" y="644" width="342" height="48" rx="8" fill="#FFFFFF" stroke="#9BB5AF"/>
+  <text x="42" y="674" fill="#35545B" font-family="Arial" font-size="16">Personnel ID: NHAI-1024</text>
+  <rect x="24" y="712" width="342" height="52" rx="8" fill="#1F7A5A"/>
+  <text x="128" y="744" fill="white" font-family="Arial" font-size="16" font-weight="700">Start Enrollment</text>
+  <text x="24" y="804" fill="#35545B" font-family="Arial" font-size="14">Enrollment encrypted locally and queued for sync.</text>
+</svg>
