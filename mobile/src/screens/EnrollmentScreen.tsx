@@ -48,7 +48,7 @@ export function EnrollmentScreen({navigation}: Props): React.JSX.Element {
         value={personnelId}
         onChangeText={setPersonnelId}
         autoCapitalize="characters"
-        placeholder="Personnel ID"
+        accessibilityLabel="Personnel ID"
         style={styles.input}
       />
       <PrimaryButton title="Start Enrollment" disabled={personnelId.trim().length < 3} onPress={enroll} />

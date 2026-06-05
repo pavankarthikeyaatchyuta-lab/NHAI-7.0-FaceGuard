@@ -4,6 +4,8 @@ Secure, lightweight, fully offline facial recognition and liveness detection for
 
 FaceGuard is built for NHAI Hackathon 7.0 as a practical field authentication system: personnel can enroll, prove liveness, verify identity, and queue audit events without network access. When connectivity returns, encrypted sync events are uploaded to AWS and acknowledged records are purged locally.
 
+Submitted by: Atchyuta Pavan Karthikeya
+
 ## Highlights
 
 - Fully offline authentication path: camera, liveness, embedding, local match, and attendance event queue.
