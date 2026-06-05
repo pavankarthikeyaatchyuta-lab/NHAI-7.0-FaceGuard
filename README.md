@@ -14,7 +14,7 @@ Submitted by: Atchyuta Pavan Karthikeya
 - React Native architecture for Android and iOS with native camera, secure storage, and ML runtime adapters.
 - Encrypted local identity records, authentication logs, and sync queue.
 - AWS S3/DynamoDB sync-and-purge design for Datalake 3.0 ingestion after connectivity returns.
-- No fake device, APK, model-size, accuracy, or latency claims; metrics remain targets until measured.
+- No unsupported device, APK, model-size, accuracy, or latency claims; metrics remain targets until measured.
 
 ## Problem Statement
 
