@@ -14,6 +14,8 @@ This table maps FaceGuard against the hackathon brief. Target metrics are not be
 | Include offline liveness detection | Blink, smile, left turn, right turn liveness engine included |
 | Include AWS sync-and-purge | API Gateway, Lambda, DynamoDB, S3, queue, and purge design included |
 | Avoid unsupported benchmark claims | README and testing plan mark metrics as targets |
+| Datalake 3.0 integration | Privacy-preserving ingestion mapping documented |
+| iOS readiness | iOS build guide and native module checklist included |
 
 ## Evidence In Repository
 
@@ -27,3 +29,5 @@ This table maps FaceGuard against the hackathon brief. Target metrics are not be
 | AWS backend | `backend/` |
 | Tests | `mobile/__tests__/` |
 | Judge documentation | `docs/` |
+| Technical documentation | `docs/TECHNICAL_DOCUMENTATION.md` |
+| Benchmark protocol | `docs/BENCHMARK_PROTOCOL.md` |

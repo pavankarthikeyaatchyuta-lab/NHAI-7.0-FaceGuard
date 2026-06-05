@@ -9,7 +9,9 @@ This document maps FaceGuard features directly to likely NHAI Hackathon evaluati
 | Innovation | Fully offline biometric authentication |
 | Innovation | Sync-and-purge audit design |
 | Feasibility | React Native Android and iOS integration |
+| Feasibility | iOS build guide and native module checklist |
 | Feasibility | Open-source model and runtime strategy |
+| Feasibility | ONNX path plus optional TFLite production path |
 | Feasibility | Encrypted local storage architecture |
 | Feasibility | Modular services that can be replaced by native bridges |
 | Scalability | Offline queue for low-connectivity field deployment |
@@ -21,6 +23,7 @@ This document maps FaceGuard features directly to likely NHAI Hackathon evaluati
 | Presentation | Professional README and architecture diagrams |
 | Presentation | UI mockups for key workflows |
 | Presentation | Integration, testing, and sync-purge documentation |
+| Presentation | Technical documentation and benchmark protocol |
 
 ## Judge Narrative
 

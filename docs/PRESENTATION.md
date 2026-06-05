@@ -32,6 +32,7 @@ Show the offline authentication and sync-purge diagrams from `docs/ARCHITECTURE.
 
 - React Native integration.
 - ONNX Runtime Mobile path.
+- Optional TFLite frame-processor production path.
 - Modular native bridge services.
 - Datalake 3.0 ingestion plan.
 
@@ -45,3 +46,9 @@ Use `docs/TESTING_PLAN.md` to show field validation scenarios without unsupporte
 - Measure on target devices.
 - Add signed sync payloads.
 - Integrate with Datalake 3.0 ingestion.
+
+## Slide 9: Credibility
+
+- Metrics are documented as targets until measured.
+- Benchmark protocol defines evidence needed for claims.
+- No raw face frames are synced to cloud.

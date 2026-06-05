@@ -4,6 +4,16 @@ Secure, lightweight, fully offline facial recognition and liveness detection for
 
 FaceGuard is built for NHAI Hackathon 7.0 as a practical field authentication system: personnel can enroll, prove liveness, verify identity, and queue audit events without network access. When connectivity returns, encrypted sync events are uploaded to AWS and acknowledged records are purged locally.
 
+## Highlights
+
+- Fully offline authentication path: camera, liveness, embedding, local match, and attendance event queue.
+- Lightweight model strategy targeting a total footprint around 20 MB after quantization.
+- Challenge-response liveness for blink, smile, and head turns to reduce photo and replay spoofing risk.
+- React Native architecture for Android and iOS with native camera, secure storage, and ML runtime adapters.
+- Encrypted local identity records, authentication logs, and sync queue.
+- AWS S3/DynamoDB sync-and-purge design for Datalake 3.0 ingestion after connectivity returns.
+- No fake device, APK, model-size, accuracy, or latency claims; metrics remain targets until measured.
+
 ## Problem Statement
 
 Develop a secure, lightweight, fully offline facial recognition and liveness detection system for field personnel authentication in remote and zero-network environments.
@@ -29,8 +39,8 @@ No benchmark results are claimed in this repository. Accuracy, latency, and mode
 ### Offline Authentication
 
 ```mermaid
-flowchart TD
-  Camera["Camera"] --> Detection["Face Detection"]
+flowchart LR
+  Camera["Camera frame"] --> Detection["Face Detection"]
   Detection --> Liveness["Liveness Detection"]
   Liveness --> Embedding["Face Embedding"]
   Embedding --> Storage["Local Encrypted Storage"]
@@ -83,6 +93,7 @@ flowchart LR
 - Camera integration through `react-native-vision-camera`.
 - Face detection, alignment, embedding, and similarity service architecture.
 - ONNX Runtime Mobile integration path through `onnxruntime-react-native`.
+- Optional TFLite production path through `react-native-fast-tflite` and Vision Camera frame processors.
 - Challenge-response liveness: blink, smile, turn left, turn right.
 - Anti-photo and anti-screen replay scoring hooks.
 - AES-256-GCM encrypted local storage.
@@ -97,6 +108,7 @@ flowchart LR
 | Mobile | React Native `0.85.3`, TypeScript |
 | Camera | `react-native-vision-camera` |
 | ML Runtime | `onnxruntime-react-native` |
+| Optional ML Runtime | `react-native-fast-tflite` production path |
 | Face Model Strategy | MobileFaceNet or lightweight InsightFace ONNX |
 | Secure Storage | AsyncStorage encrypted with AES-256-GCM, keys in Keychain/Keystore |
 | Connectivity | `@react-native-community/netinfo` |
@@ -194,10 +206,14 @@ These are project targets, not measured benchmark claims:
 ## Documentation
 
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical Documentation](docs/TECHNICAL_DOCUMENTATION.md)
 - [Model Pipeline](docs/MODEL_PIPELINE.md)
+- [Benchmark Protocol](docs/BENCHMARK_PROTOCOL.md)
 - [Setup And Usage](docs/SETUP_AND_USAGE.md)
+- [iOS Build Guide](docs/IOS_BUILD_GUIDE.md)
 - [Demo Flow](docs/DEMO_FLOW.md)
 - [Brief Compliance](docs/BRIEF_COMPLIANCE.md)
+- [Datalake 3.0 Mapping](docs/DATALAKE_3_MAPPING.md)
 - [Integration Guide](docs/INTEGRATION_GUIDE.md)
 - [Security And Threat Model](docs/SECURITY.md)
 - [Sync And Purge Design](docs/SYNC_PURGE.md)
